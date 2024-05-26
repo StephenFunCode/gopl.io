@@ -12,9 +12,10 @@ import (
 	"strings"
 )
 
-//!+
+// !+
 func main() {
-	fmt.Println(strings.Join(os.Args[1:], " "))
+	fmt.Println("Invoking command: ", os.Args[0])
+	fmt.Println("Command line args: ", strings.Join(os.Args[1:], " "))
 }
 
 //!-
